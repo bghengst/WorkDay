@@ -11,6 +11,11 @@ $(document).ready(function(){
         localStorage.setItem(time,text);
     }
 
-    
+    function timeTracker(){
+
+        var timeNow = moment().hour();
+
+        
+    }
 
 })
