@@ -30,6 +30,12 @@ $(document).ready(function(){
                 $(this).addClass("present");
             }
 
+            else if (blockTime < timeNow){
+                $(this).removeClass("past");
+                $(this).removeClass("present");
+                $(this).addClass("future");
+            }
+
 
 
         })
