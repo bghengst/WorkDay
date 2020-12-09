@@ -17,7 +17,15 @@ $(document).ready(function(){
 
         $(".time-block").each(function(){
             var blockTime = parseInt($(this).attr("id").split("hour")[1]);
-            
+
+            if (blockTime < timeNow){
+                $(this).removeClass("future");
+                $(this).removeClass("present");
+                $(this).addClass("past");
+            }
+
+
+
         })
 
 
