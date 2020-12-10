@@ -43,4 +43,6 @@ $(document).ready(function(){
 
     }
 
+    $("#hour8.description").val(localStorage.getItem("hour8"))
+
 })
